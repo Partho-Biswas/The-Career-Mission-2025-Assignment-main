@@ -42,10 +42,18 @@ nav {
     font-size: 1.2rem;
     text-align: center;
     box-shadow: 0px 5px 10px -5px #0D1321;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(90deg, #ff7300, #ffb547);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 34px -4px #ff5700
 }
 
 section {
-    margin: 6.25rem 5.5rem;
+    margin: 10% 10%;
 }
 
 
@@ -84,13 +92,12 @@ p {
 
 
 .dp img {
-    max-width: 15rem;
     max-height: 15rem;
     padding-bottom: 32px;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 48px;
     line-height: 68px;
     margin-bottom: 24px;
 }
@@ -121,11 +128,12 @@ p {
 }
 
 .ans-right img {
-    width: 100%;
+    width: 106%;
+    padding-left: 4%;
 }
 
 .inspiration {
-    margin: 6.25rem 10rem;
+    margin: 10% 15%;
 }
 
 .inspiration-quote {
@@ -143,9 +151,10 @@ p {
 }
 
 iframe {
-    padding: 2rem;
+    padding: 3%;
     width: 100%;
     height: 40rem;
+    border-radius: 16px;
 }
 
 .target-goal {
@@ -168,6 +177,13 @@ iframe {
     height: 230px;
     box-shadow: 0px 4px 20px #00000025;
     border-radius: 16px;
+    transition: 1s;
+}
+
+.card:hover {
+    background-image: linear-gradient(180deg, #bfd0ee, #89d2ec);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 34px -4px #4e4845
 }
 
 .card img,
@@ -193,3 +209,174 @@ footer span {
 footer img {
     margin-left: 24px;
 }
+
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    iframe {
+        padding: 3%;
+        width: 100%;
+        height: 20rem;
+        border-radius: 16px;
+    }
+
+    .inspiration {
+        margin: 10% 12%;
+    }
+
+    footer span {
+        font-size: 18px;
+    }
+
+    footer img {
+        margin-left: 18px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 2.5% 6.5%;
+        background-color: #FFFFFF;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .dp img {
+        max-height: 12rem;
+        padding-bottom: 32px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        padding-bottom: 22px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .hero-area,
+    .why-ans {
+        background-color: #E6EDF9;
+        padding: 24px 30px;
+        border-radius: 16px;
+    }
+
+    footer {
+        padding: 22px 10%;
+    }
+
+    footer img {
+        margin-right: 6px;
+        width: 30px;
+    }
+
+    footer span {
+        font-size: 16px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        padding-bottom: 16px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+
+    .why {
+        max-width: 75%;
+    }
+
+    .why-ans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ans-left {
+        max-width: 100%;
+    }
+
+    .ans-right {
+        max-width: 100%;
+    }
+
+    .ans-right img {
+        width: 100%;
+    }
+
+    .target-goal {
+        max-width: 75%;
+    }
+
+    .cards-box {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 3% 2%;
+        padding: 5% 10%;
+        width: 76vw;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        width: 56px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {}
